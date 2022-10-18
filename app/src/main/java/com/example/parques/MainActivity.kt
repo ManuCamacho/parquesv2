@@ -14,8 +14,12 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button.setOnClickListener{
-            val TAG=" nombre "
+        binding.button.setOnClickListener {
+
+            val miDialogo = MiDialogFragment()
+            miDialogo.show(supportFragmentManager, "MiDialogo")
+
+            /*val TAG=" nombre "
 
             Log.d(TAG, "El parque es ${binding.nombre.text} ")
             Log.d(TAG, "El parque es ${binding.descripcion.text} ")
@@ -41,6 +45,8 @@ class MainActivity : AppCompatActivity() {
             Log.d(TAG, "La hora de apertura es ${binding.SpinnerHoraApertura.selectedItem}")
             Log.d(TAG, "La hora de cierre es ${binding.SpinnerHoraCierre.selectedItem}")
 
+
+            }*/
 
         }
     }
